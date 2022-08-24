@@ -2,9 +2,9 @@
 A take-home coding assignment for backend developer interview. 
 
 ## Your Task
-1. Given the CSV dataset (hdb-carpark-information-<timestamp>.csv) that contains details of a list of carparks, design the database to store the given information in the dataset and to support the below given user stories.
+1. Given the CSV dataset (hdb-carpark-information-<timestamp>.csv) that contains details of a list of carparks, design the database to store the given information in the dataset and to support the below given user stories. ER diagram should be provided.
 2. Write a batch job that will process and store the information into the database of your choice. This is a daily delta file that will be interfaced over from source. In the event there is an error processing the records in the file, the entire file should rollback.
-3. Write the APIs that will fulfill the below given user stories. No front-end screens are required to be developed - just the APIs. However, you should be prepared to articulate how the APIs are envisoned to be utilised by the front-end developer. :)
+3. Write the APIs that will fulfill the below given user stories. Swagger documentation should be provided. No front-end screens are required to be developed - just the APIs. However, you should be prepared to articulate how the APIs are envisoned to be utilised by the front-end developer. :)
 
 ### User Stories
 * As a user, I want to be able to filter the list of carpark by the following criteria:
@@ -23,8 +23,9 @@ Please review the information in this section before you get started with your d
 
 ### Tech Stack
 You may choose to develop the application using either of the following stack:
-* Spring Boot / Spring Batch with H2 database and Hibernate ORM
-* .NET Core 6.x with SQLLite database and Entity Framework Core ORM
+* Spring Boot / Spring Batch with H2 database and ORM of your choice
+* .NET Core 6.x with SQLite database and ORM of your choice
+* Node.js with an in-memory database of your choice
 
 Note: You are encouraged to try out .NET Core as Microsoft technologies are primarily used within the firm.
 
@@ -42,6 +43,8 @@ You are free to choose the IDE (Integrated Development Environment) tool you are
 Additional consideration to fine-tune your solution. It's not a must to implement in this assignment but please be prepared to discuss:
 * The dataset has the potential to be large in size.
 * Minimal human intervention for job recovery.
+* Secure coding practices
+* API authentication and authorisation
 
 ## Time Estimates
 This assignment should take about 2 to 4 hours of your time depending on your level of experiences. 
